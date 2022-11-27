@@ -1,9 +1,6 @@
 package cn.mine.learning.spring.core.util;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author 丁星（镜月）
@@ -43,5 +40,10 @@ public class MultipleMap<K, V> {
             vs.add(v);
             val.put(key, vs);
         }
+    }
+
+    @Override
+    public String toString() {
+        return null == val ? "null" : val.toString();
     }
 }

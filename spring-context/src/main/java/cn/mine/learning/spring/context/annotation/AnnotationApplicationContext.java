@@ -15,7 +15,7 @@ import java.util.List;
 @SuppressWarnings({"WeakerAccess", "unused"})
 public class AnnotationApplicationContext extends AbstractBeanFactory {
 
-    private String packagePath;
+    private final String packagePath;
 
     public AnnotationApplicationContext(String packagePath) {
         if (null == packagePath || packagePath.isEmpty()) {
